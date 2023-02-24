@@ -106,7 +106,7 @@ void ComplementaryFilterROS::initializeParams()
     reverse_tf_ = this->declare_parameter<bool>("reverse_tf", false);
     constant_dt_ = this->declare_parameter<double>("constant_dt", 0.0);
     publish_debug_topics_ =
-        this->declare_parameter<bool>("publish_debug_topics", false);
+        this->declare_parameter<bool>("publish_debug_topics", true);
     gain_acc = this->declare_parameter<double>("gain_acc", 0.01);
     gain_mag = this->declare_parameter<double>("gain_mag", 0.01);
     do_bias_estimation =
